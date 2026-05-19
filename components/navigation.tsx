@@ -55,14 +55,21 @@ export function Navigation() {
         </div>
 
         {/* CTA */}
-        <motion.button
-          className="px-5 py-2 rounded-full bg-primary/10 border border-primary/30 text-foreground text-sm font-light hover:bg-primary/20 transition-colors"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          Join Waitlist
-        </motion.button>
-      </div>
+<motion.button
+  type="button"
+  data-tally-open="Zj1yR0"
+  data-tally-layout="modal"
+  data-tally-width="500"
+  data-tally-hide-title="1"
+  data-tally-hidden-fields="source=website,page=navigation,campaign=launch"
+  className="px-5 py-2 rounded-full bg-primary/10 border border-primary/30 text-foreground text-sm font-light hover:bg-primary/20 transition-colors"
+  whileHover={{ scale: 1.02 }}
+  whileTap={{ scale: 0.98 }}
+>
+  Join Waitlist
+</motion.button>
+      
+    </div>
     </motion.nav>
   )
 }
