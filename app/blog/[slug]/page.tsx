@@ -63,14 +63,14 @@ export default function BlogArticlePage({ params }: BlogArticlePageProps) {
         <div className="mb-10 flex flex-wrap gap-4">
           <Link
             href="/blog"
-            className="inline-flex text-sm font-medium text-violet-300 hover:text-violet-200"
+            className="inline-flex rounded-full border border-violet-400/30 px-5 py-3 text-sm font-medium text-violet-200 transition hover:border-violet-300 hover:text-white"
           >
             ← Back to blog
           </Link>
 
           <Link
             href="/"
-            className="inline-flex text-sm font-medium text-slate-300 hover:text-white"
+            className="inline-flex rounded-full border border-white/15 px-5 py-3 text-sm font-medium text-slate-300 transition hover:border-violet-300 hover:text-white"
           >
             Back to home
           </Link>
