@@ -12,7 +12,12 @@ export default function BlogPage() {
 
   return (
     <main className="min-h-screen bg-[#080817] text-white">
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <a
+  href="/"
+  className="mb-10 inline-flex rounded-full border border-white/15 px-5 py-3 text-sm font-medium text-white transition hover:border-violet-300 hover:text-violet-200"
+>
+  ← Back to home
+</a>
         <div className="mb-14">
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-violet-300">
             Mirror Journal
