@@ -206,14 +206,57 @@ export function Hero() {
           <GlowingMirror />
         </motion.div>
 
-        {/* CTA buttons */}
-        <motion.div
-          className="flex flex-col sm:flex-row gap-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-        >
-         <motion.button
+       {/* CTA buttons */}
+<motion.div
+  className="flex flex-col sm:flex-row gap-4"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 1.2 }}
+>
+  <motion.button
+    type="button"
+    data-tally-open="Zj1yR0"
+    data-tally-layout="modal"
+    data-tally-width="500"
+    data-tally-hide-title="1"
+    data-tally-hidden-fields="source=website,page=hero,campaign=launch"
+    className="relative px-8 py-4 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide overflow-hidden group"
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+  >
+    <span className="relative z-10">Join Waitlist</span>
+    <motion.div
+      className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary"
+      style={{ backgroundSize: "200% 100%" }}
+      animate={{
+        backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+      }}
+      transition={{
+        duration: 3,
+        repeat: Infinity,
+        ease: "linear",
+      }}
+    />
+  </motion.button>
+
+  <motion.a
+    href="/blog"
+    className="px-8 py-4 rounded-full border border-primary/40 text-primary font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-primary/10 transition-colors"
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+  >
+    Read Blog
+  </motion.a>
+
+  <motion.button
+    type="button"
+    className="px-8 py-4 rounded-full border border-border text-foreground font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-secondary/50 transition-colors"
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+  >
+    Watch Film
+  </motion.button>
+</motion.div>
   type="button"
   data-tally-open="Zj1yR0"
   data-tally-layout="modal"
