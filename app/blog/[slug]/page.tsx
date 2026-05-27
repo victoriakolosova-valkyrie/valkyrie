@@ -3,9 +3,9 @@ import { notFound } from "next/navigation"
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog-posts"
 
 type BlogArticlePageProps = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export function generateStaticParams() {
@@ -14,8 +14,9 @@ export function generateStaticParams() {
   }))
 }
 
-export function generateMetadata({ params }: BlogArticlePageProps) {
-  const post = getBlogPostBySlug(params.slug)
+export async function generateMetadata({ params }: BlogArticlePageProps) {
+  const { slug } = await params
+  const post = getBlogPostBySlug(slug)
 
   if (!post) {
     return {
@@ -44,8 +45,9 @@ export function generateMetadata({ params }: BlogArticlePageProps) {
   }
 }
 
-export default function BlogArticlePage({ params }: BlogArticlePageProps) {
-  const post = getBlogPostBySlug(params.slug)
+export default async function BlogArticlePage({ params }: BlogArticlePageProps) {
+  const { slug } = await params
+  const post = getBlogPostBySlug(slug)
 
   if (!post) {
     notFound()
