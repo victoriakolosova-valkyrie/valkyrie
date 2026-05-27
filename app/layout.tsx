@@ -4,19 +4,20 @@ import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ 
-  subsets: ["latin"],
+const inter = Inter({
+  subsets: ['latin'],
   variable: '--font-inter',
-});
+})
 
-const playfair = Playfair_Display({ 
-  subsets: ["latin"],
+const playfair = Playfair_Display({
+  subsets: ['latin'],
   variable: '--font-playfair',
-});
+})
 
 export const metadata: Metadata = {
   title: 'Mirror, Mirror | The Emotional AI Mirror',
-  description: 'Mirror, mirror on the wall... A voice-powered ambient mirror that listens, supports, and gently responds through light and sound. Experience the magic of emotional ambient AI.',
+  description:
+    'Mirror, mirror on the wall... A voice-powered ambient mirror that listens, supports, and gently responds through light and sound. Experience the magic of emotional ambient AI.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -43,9 +44,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} bg-background`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${playfair.variable} bg-background`}
+    >
       <body className="font-sans antialiased">
         {children}
+
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="FLmcoJPTRhvuJsoZ3ejQ0A"
+          strategy="afterInteractive"
+        />
 
         <Script
           src="https://tally.so/widgets/embed.js"
