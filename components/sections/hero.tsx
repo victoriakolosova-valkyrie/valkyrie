@@ -4,7 +4,9 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 
 function Particles() {
-  const [particles, setParticles] = useState<Array<{ id: number; left: string; delay: number; duration: number }>>([])
+  const [particles, setParticles] = useState<
+    Array<{ id: number; left: string; delay: number; duration: number }>
+  >([])
 
   useEffect(() => {
     const newParticles = Array.from({ length: 50 }, (_, i) => ({
@@ -13,6 +15,7 @@ function Particles() {
       delay: Math.random() * 10,
       duration: 15 + Math.random() * 20,
     }))
+
     setParticles(newParticles)
   }, [])
 
@@ -47,7 +50,8 @@ function GlowingMirror() {
       <motion.div
         className="absolute inset-0 rounded-full"
         style={{
-          background: "radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%)",
+          background:
+            "radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%)",
         }}
         animate={{
           scale: [1, 1.1, 1],
@@ -59,12 +63,13 @@ function GlowingMirror() {
           ease: "easeInOut",
         }}
       />
-      
+
       {/* Second glow layer - silver moonlight */}
       <motion.div
         className="absolute inset-4 rounded-full"
         style={{
-          background: "radial-gradient(circle, rgba(192,192,200,0.20) 0%, transparent 60%)",
+          background:
+            "radial-gradient(circle, rgba(192,192,200,0.20) 0%, transparent 60%)",
         }}
         animate={{
           scale: [1, 1.05, 1],
@@ -104,7 +109,7 @@ function GlowingMirror() {
       >
         {/* Inner reflection */}
         <div className="absolute inset-4 rounded-full bg-gradient-to-br from-foreground/5 via-transparent to-transparent" />
-        
+
         {/* Subtle inner glow ring */}
         <motion.div
           className="absolute inset-6 rounded-full border border-primary/20"
@@ -139,7 +144,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background gradient - gold and silver mist */}
-      <div 
+      <div
         className="absolute inset-0 bg-gradient-to-b from-background via-background to-secondary/20"
         style={{
           backgroundImage: `
@@ -150,7 +155,7 @@ export function Hero() {
       />
 
       {/* Fog overlay - silver and gold haze */}
-      <div 
+      <div
         className="absolute inset-0 opacity-30"
         style={{
           backgroundImage: `
@@ -193,7 +198,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          An enchanted voice-powered mirror that listens, supports, and gently responds through silver light and whispered sound.
+          An enchanted voice-powered mirror that listens, supports, and gently
+          responds through silver light and whispered sound.
         </motion.p>
 
         {/* Mirror visualization */}
@@ -206,83 +212,48 @@ export function Hero() {
           <GlowingMirror />
         </motion.div>
 
-       {/* CTA buttons */}
-<motion.div
-  className="flex flex-col sm:flex-row gap-4"
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 1.2 }}
->
-  <motion.button
-    type="button"
-    data-tally-open="Zj1yR0"
-    data-tally-layout="modal"
-    data-tally-width="500"
-    data-tally-hide-title="1"
-    data-tally-hidden-fields="source=website,page=hero,campaign=launch"
-    className="relative px-8 py-4 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide overflow-hidden group"
-    whileHover={{ scale: 1.02 }}
-    whileTap={{ scale: 0.98 }}
-  >
-    <span className="relative z-10">Join Waitlist</span>
-    <motion.div
-      className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary"
-      style={{ backgroundSize: "200% 100%" }}
-      animate={{
-        backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-      }}
-      transition={{
-        duration: 3,
-        repeat: Infinity,
-        ease: "linear",
-      }}
-    />
-  </motion.button>
+        {/* CTA buttons */}
+        <motion.div
+          className="flex flex-col sm:flex-row gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+        >
+          <motion.button
+            type="button"
+            data-tally-open="Zj1yR0"
+            data-tally-layout="modal"
+            data-tally-width="500"
+            data-tally-hide-title="1"
+            data-tally-hidden-fields="source=website,page=hero,campaign=launch"
+            className="relative px-8 py-4 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide overflow-hidden group"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <span className="relative z-10">Join Waitlist</span>
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary"
+              style={{ backgroundSize: "200% 100%" }}
+              animate={{
+                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+            />
+          </motion.button>
 
-  <motion.a
-    href="/blog"
-    className="px-8 py-4 rounded-full border border-primary/40 text-primary font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-primary/10 transition-colors"
-    whileHover={{ scale: 1.02 }}
-    whileTap={{ scale: 0.98 }}
-  >
-    Read Blog
-  </motion.a>
-
-  <motion.button
-    type="button"
-    className="px-8 py-4 rounded-full border border-border text-foreground font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-secondary/50 transition-colors"
-    whileHover={{ scale: 1.02 }}
-    whileTap={{ scale: 0.98 }}
-  >
-    Watch Film
-  </motion.button>
-</motion.div>
-  type="button"
-  data-tally-open="Zj1yR0"
-  data-tally-layout="modal"
-  data-tally-width="500"
-  data-tally-hide-title="1"
-  data-tally-hidden-fields="source=website,page=hero,campaign=launch"
-  className="relative px-8 py-4 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide overflow-hidden group"
-  whileHover={{ scale: 1.02 }}
-  whileTap={{ scale: 0.98 }}
->
-  <span className="relative z-10">Join Waitlist</span>
-  <motion.div
-    className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary"
-    style={{ backgroundSize: "200% 100%" }}
-    animate={{
-      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-    }}
-    transition={{
-      duration: 3,
-      repeat: Infinity,
-      ease: "linear",
-    }}
-  />
-</motion.button>
+          <a
+            href="/blog"
+            className="px-8 py-4 rounded-full border border-primary/40 text-primary font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-primary/10 transition-colors"
+          >
+            Read Blog
+          </a>
 
           <motion.button
+            type="button"
             className="px-8 py-4 rounded-full border border-border text-foreground font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-secondary/50 transition-colors"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
