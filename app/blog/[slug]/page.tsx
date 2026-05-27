@@ -126,12 +126,17 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
             voice-first AI presence for the home.
           </p>
 
-          <Link
-            href="/#waitlist"
-            className="mt-6 inline-flex rounded-full bg-violet-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-violet-400"
-          >
-            Join the waitlist
-          </Link>
+         <button
+  type="button"
+  data-tally-open="Zj1yR0"
+  data-tally-layout="modal"
+  data-tally-width="500"
+  data-tally-hide-title="1"
+  data-tally-hidden-fields="source=website,page=blog_article,campaign=blog_cta"
+  className="mt-6 inline-flex rounded-full bg-violet-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-violet-400"
+>
+  Join the waitlist
+</button>
         </div>
       </article>
     </main>
