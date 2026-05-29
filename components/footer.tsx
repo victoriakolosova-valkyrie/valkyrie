@@ -20,27 +20,27 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Links */}
-          <div className="flex flex-wrap justify-center gap-8">
-            <a
-              href="#"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
-            >
-              Privacy
-            </a>
-            <a
-              href="#"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
-            >
-              Terms
-            </a>
-            <a
-              href="#"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
-            >
-              Contact
-            </a>
-          </div>
+         {/* Links */}
+<div className="flex flex-wrap justify-center gap-8">
+  <a
+    href="/privacy"
+    className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
+  >
+    Privacy
+  </a>
+  <a
+    href="#"
+    className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
+  >
+    Terms
+  </a>
+  <a
+    href="mailto:mirror@project.com"
+    className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
+  >
+    Contact
+  </a>
+</div>
 
           {/* Social */}
           <div className="flex items-center gap-4">
