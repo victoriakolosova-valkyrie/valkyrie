@@ -193,6 +193,95 @@ That is the direction Mirror is exploring: a smart mirror for the home where voi
 If you are interested in testing a voice-first AI mirror for the home, join the Mirror waitlist at smartmirror.space.
   `,
 },
+  {
+  slug: "smart-mirror-for-home-ai-companion-outside-the-phone",
+  title: "Smart Mirror for Home: Why People May Want an AI Companion Outside the Phone",
+  description:
+    "Why the next generation of AI companions may move beyond phone apps and become calm, physical objects inside the home.",
+  date: "2026-05-30",
+  category: "AI Companion",
+  image: "/blog/smart-mirror-for-home.jpg",
+  keywords: [
+    "smart mirror for home",
+    "AI companion for home",
+    "AI assistant mirror",
+    "smart home AI",
+    "emotional AI",
+    "AI wellness mirror",
+    "voice AI companion",
+  ],
+  content: `
+When people think about AI companions, they often imagine an app. A chatbot on a phone. A small icon on a screen. A conversation that starts with typing and ends when the phone is locked.
+
+That format is familiar, but it also has limits.
+
+Phones are busy objects. They contain work messages, social media, notifications, banking apps, news, photos, calendars, and distractions. For many people, the phone is not a calm place. It is the place where attention gets pulled in many directions at once.
+
+That creates an important question for emotional AI:
+
+Should an AI companion always live inside the phone?
+
+Mirror is built from the belief that some AI experiences may work better when they have a physical place in the home. Not every interaction should happen through a screen. Not every emotional moment needs another app. Sometimes people need a calmer object, in a quieter environment, with a more natural way to speak.
+
+This is where the idea of a smart mirror for home becomes interesting.
+
+A mirror is already part of a daily routine. People stand in front of it in the morning, before leaving home, after a shower, before an important moment, or at the end of the day. It is one of the few objects in the home that naturally creates a pause.
+
+That pause can become useful.
+
+A home AI companion does not need to interrupt. It does not need to send constant notifications. It does not need to compete with social media. It can wait. It can be available when the person chooses to stand in front of it and speak.
+
+This changes the emotional relationship with the product.
+
+A phone app often feels like software. A physical smart mirror can feel like a place. That difference matters because emotional reflection is not only about information. It is about timing, safety, ritual, and context.
+
+For example, a person may not want to open a mental health app at 2 a.m. They may not want to write a journal entry. They may not want to explain everything to another person. But they may still want to say something out loud.
+
+A voice-first AI mirror can support that moment.
+
+The user might say:
+
+“I do not need advice. I just need to say this somewhere.”
+
+Mirror should not rush to solve everything. It should not behave like a therapist. It should not pretend to know the perfect answer. Instead, it can listen, reflect, and ask a simple question that helps the person hear themselves more clearly.
+
+This is different from a typical smart home device.
+
+Most smart home AI is built around control. Turn on the lights. Lock the door. Play music. Start a timer. These interactions are useful, but they are functional. Mirror is not mainly about controlling the home. It is about creating a private moment inside the home.
+
+That makes Mirror closer to an AI companion for home, but with important boundaries.
+
+Mirror is not designed to become a romantic partner. It is not designed to replace therapy. It is not designed to create dependency. The goal is to provide calm presence, emotional reflection, and user-controlled memory.
+
+For possible users, this can be valuable in several situations.
+
+A person living alone may want a quiet place to speak at the end of the day.
+
+A busy parent may want a short reflective moment before the household wakes up.
+
+A remote worker may want to reset after spending the whole day in front of screens.
+
+A student may want to process stress without opening another distracting app.
+
+A person who journals may want to speak instead of write.
+
+A smart mirror for home can serve these people not because it has the most features, but because it fits into a real daily environment.
+
+The strongest version of Mirror is not a mirror that does everything. It is a mirror that does one thing carefully: it creates a place where someone can pause, speak, and hear themselves again.
+
+Privacy is essential for this kind of product. If Mirror becomes part of the home, users must understand what is processed, what is remembered, and what can be deleted. Memory should belong to the user. The product should be transparent from the beginning.
+
+This is also why Mirror should grow slowly. The first goal is not mass adoption. The first goal is validation: do people want a physical AI companion in the home, and do they return to it after the novelty fades?
+
+If users come back weekly, if they describe Mirror as helpful, and if they trust it enough to keep using it, then the product is creating real value.
+
+The future of AI companions may not be limited to apps. Some companions may become objects. Calm objects. Familiar objects. Objects that do not demand attention, but are present when needed.
+
+Mirror is exploring that future through a voice-first AI smart mirror for the home.
+
+If you are interested in testing an AI companion for home that lives outside the phone, join the Mirror waitlist at smartmirror.space.
+  `,
+},
 ]
 
 export function getAllBlogPosts() {
