@@ -29,11 +29,11 @@ export function Footer() {
     Privacy
   </a>
   <a
-    href="#"
-    className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
-  >
-    Terms
-  </a>
+  href="/terms"
+  className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
+>
+  Terms
+</a>
   <a
     href="mailto:mirror@project.com"
     className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
