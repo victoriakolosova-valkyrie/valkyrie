@@ -287,7 +287,7 @@ If you are interested in testing an AI companion for home that lives outside the
   title: "Can an AI Mirror Be Private? What Trust Means for Emotional AI at Home",
   description:
     "Why privacy, memory control, and clear boundaries matter for any AI mirror or emotional AI companion used inside the home.",
-  date: "2026-05-31",
+  date: "2026-06-02",
   category: "Privacy & Trust",
   image: "/blog/ai-mirror-privacy.jpg",
   keywords: [
