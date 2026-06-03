@@ -380,7 +380,7 @@ If you are interested in testing a private, voice-first AI mirror for the home, 
   title: "AI Smart Mirror vs Smart Speaker: Why the Form Factor Matters",
   description:
     "Why an AI smart mirror creates a different kind of home experience than a smart speaker, chatbot, or phone-based assistant.",
-  date: "2026-06-02",
+  date: "2026-06-03",
   category: "Smart Home AI",
   image: "/blog/ai-smart-mirror-vs-smart-speaker.jpg",
   keywords: [
