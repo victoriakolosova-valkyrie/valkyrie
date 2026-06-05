@@ -1,6 +1,47 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
+
+function Particles() {
+  const [particles, setParticles] = useState<
+    Array<{ id: number; left: string; delay: number; duration: number }>
+  >([])
+
+  useEffect(() => {
+    const newParticles = Array.from({ length: 50 }, (_, i) => ({
+      id: i,
+      left: `${Math.random() * 100}%`,
+      delay: Math.random() * 10,
+      duration: 15 + Math.random() * 20,
+    }))
+
+    setParticles(newParticles)
+  }, [])
+
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {particles.map((particle) => (
+        <motion.div
+          key={particle.id}
+          className="absolute w-1 h-1 rounded-full bg-primary/30"
+          style={{ left: particle.left }}
+          initial={{ y: "100vh", opacity: 0 }}
+          animate={{
+            y: "-10vh",
+            opacity: [0, 1, 1, 0],
+          }}
+          transition={{
+            duration: particle.duration,
+            repeat: Infinity,
+            delay: particle.delay,
+            ease: "linear",
+          }}
+        />
+      ))}
+    </div>
+  )
+}
 
 function GlowingMirror() {
   return (
@@ -124,7 +165,8 @@ export function Hero() {
         }}
       />
 
-      
+      <Particles />
+
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
         {/* Pre-headline */}
@@ -218,26 +260,6 @@ export function Hero() {
           >
             Watch Film
           </motion.a>
-        </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2 }}
-        >
-          <motion.div
-            className="w-6 h-10 rounded-full border border-muted-foreground/30 flex justify-center pt-2"
-            animate={{ opacity: [0.3, 0.6, 0.3] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <motion.div
-              className="w-1 h-2 rounded-full bg-muted-foreground/50"
-              animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            />
-          </motion.div>
         </motion.div>
       </div>
     </section>
