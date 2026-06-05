@@ -30,7 +30,12 @@ export function Footer() {
             >
               Help
             </a>
-
+            <a
+              href="/support"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
+            >
+              Support
+            </a>
             <a
               href="/privacy"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
