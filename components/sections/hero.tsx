@@ -1,47 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { useEffect, useState } from "react"
-
-function Particles() {
-  const [particles, setParticles] = useState<
-    Array<{ id: number; left: string; delay: number; duration: number }>
-  >([])
-
-  useEffect(() => {
-    const newParticles = Array.from({ length: 50 }, (_, i) => ({
-      id: i,
-      left: `${Math.random() * 100}%`,
-      delay: Math.random() * 10,
-      duration: 15 + Math.random() * 20,
-    }))
-
-    setParticles(newParticles)
-  }, [])
-
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {particles.map((particle) => (
-        <motion.div
-          key={particle.id}
-          className="absolute w-1 h-1 rounded-full bg-primary/30"
-          style={{ left: particle.left }}
-          initial={{ y: "100vh", opacity: 0 }}
-          animate={{
-            y: "-10vh",
-            opacity: [0, 1, 1, 0],
-          }}
-          transition={{
-            duration: particle.duration,
-            repeat: Infinity,
-            delay: particle.delay,
-            ease: "linear",
-          }}
-        />
-      ))}
-    </div>
-  )
-}
 
 function GlowingMirror() {
   return (
@@ -165,8 +124,7 @@ export function Hero() {
         }}
       />
 
-      <Particles />
-
+      
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
         {/* Pre-headline */}
