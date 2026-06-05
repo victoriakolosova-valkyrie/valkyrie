@@ -253,13 +253,14 @@ export function Hero() {
           </a>
 
           <motion.a
-  href="#film"
-  className="px-8 py-4 rounded-full border border-border text-foreground font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-secondary/50 transition-colors"
-  whileHover={{ scale: 1.02 }}
-  whileTap={{ scale: 0.98 }}
->
-  Watch Film
-</motion.a>
+            href="#film"
+            className="px-8 py-4 rounded-full border border-border text-foreground font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-secondary/50 transition-colors"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            Watch Film
+          </motion.a>
+        </motion.div>
 
         {/* Scroll indicator */}
         <motion.div
