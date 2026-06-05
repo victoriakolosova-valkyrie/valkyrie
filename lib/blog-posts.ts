@@ -65,7 +65,7 @@ If you are interested in becoming an early tester, join the Mirror waitlist at m
     title: "How to Use Mirror’s Memory Controls",
     description:
       "A practical guide to how Mirror remembers, how users stay in control, and how memory can be viewed, exported, or deleted.",
-    date: "2026-05-27",
+    date: "2026-05-28",
     category: "Documentation",
     image: "/blog/mirror-memory-controls.jpg",
     keywords: [
