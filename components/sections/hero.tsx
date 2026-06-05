@@ -252,15 +252,14 @@ export function Hero() {
             Read Blog
           </a>
 
-          <motion.button
-            type="button"
-            className="px-8 py-4 rounded-full border border-border text-foreground font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-secondary/50 transition-colors"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            Watch Film
-          </motion.button>
-        </motion.div>
+          <motion.a
+  href="#film"
+  className="px-8 py-4 rounded-full border border-border text-foreground font-medium text-sm tracking-wide backdrop-blur-sm hover:bg-secondary/50 transition-colors"
+  whileHover={{ scale: 1.02 }}
+  whileTap={{ scale: 0.98 }}
+>
+  Watch Film
+</motion.a>
 
         {/* Scroll indicator */}
         <motion.div
