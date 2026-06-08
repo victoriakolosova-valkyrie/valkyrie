@@ -810,7 +810,7 @@ If you are interested in testing a voice-first AI reflection tool for the home, 
   title: "Daily Emotional Check-Ins: How an AI Wellness Mirror Could Help You Notice Patterns",
   description:
     "How daily emotional check-ins with an AI wellness mirror could help people build a private reflection routine at home.",
-  date: "2026-06-06",
+  date: "2026-06-08",
   category: "AI Wellness",
   image: "/blog/daily-emotional-check-ins-ai-wellness-mirror.jpg",
   keywords: [
