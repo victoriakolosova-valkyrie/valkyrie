@@ -1203,7 +1203,7 @@ The future of AI will not only be about more powerful models. It will also be ab
 
 For private reflection, the mirror may be one of the most natural places for AI to go next.
 `,
-}
+},
   {
   slug: "why-private-ai-reflection-needs-a-physical-place-at-home",
   title: "Why Private AI Reflection Needs a Physical Place at Home",
@@ -1336,7 +1336,7 @@ It may be a quiet physical object at home.
 
 It may be a mirror.
 `,
-}
+},
 ]
 
 export function getAllBlogPosts() {
