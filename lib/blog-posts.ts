@@ -4534,7 +4534,7 @@ It may be learning how both can work together.
   title: "Voice-First AI Companion for Daily Reflection: Why Speaking Can Be Easier Than Typing",
   description:
     "A voice-first AI companion can help people reflect faster and more naturally than typing into another app. Here is why speech matters for private daily reflection.",
-  date: "2026-06-30",
+  date: "2026-01-07",
   category: "Voice AI",
   image: "/blog/voice-first-ai-companion-daily-reflection.jpg",
   keywords: [
