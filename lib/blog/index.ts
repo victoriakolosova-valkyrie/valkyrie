@@ -17,3 +17,11 @@ export const blogPosts = [
 export function getBlogPost(slug: string) {
   return blogPosts.find((post) => post.slug === slug);
 }
+
+export function getAllBlogPosts() {
+  return blogPosts;
+}
+
+export function getBlogPostBySlug(slug: string) {
+  return getBlogPost(slug);
+}
