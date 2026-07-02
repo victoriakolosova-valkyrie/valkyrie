@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next"
-import { getAllBlogPosts } from "@/lib/blog-posts"
+import { getAllBlogPosts } from "@/lib/blog"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://smartmirror.space"

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { getAllBlogPosts } from "@/lib/blog-posts"
+import { getAllBlogPosts } from "@/lib/blog"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 

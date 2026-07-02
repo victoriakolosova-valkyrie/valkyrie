@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog-posts"
+import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
