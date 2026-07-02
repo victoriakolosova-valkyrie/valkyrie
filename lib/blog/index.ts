@@ -1,12 +1,13 @@
 import { blogPosts as rawBlogPosts } from "../blog-posts";
 import { post as voiceFirstDailyReflectionPost } from "./posts/2026-07-01-voice-first-ai-companion-for-daily-reflection";
+import { post as whatIsAiCompanionPost } from "./posts/2026-07-02-what-is-an-ai-companion";
 
 export type { BlogPost } from "./types";
 
 const separatedPosts = [
+  whatIsAiCompanionPost,
   voiceFirstDailyReflectionPost,
 ];
-
 const separatedSlugs = new Set(separatedPosts.map((post) => post.slug));
 
 export const blogPosts = [
